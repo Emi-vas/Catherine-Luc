@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Gotu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Festive&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fuggles&display=swap");
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Gotu', sans-serif; }
+
+body {
+  background: #fff9e4;
+  font-size: 1.25em; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+main {
+  width: 100%;
+  margin: auto;
+  position: relative; }
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 90px;
+  background: #867262;
+  color: #fff9e4; }
+  footer p {
+    text-align: center; }
+  footer h2 {
+    margin-bottom: 0;
+    display: none; }
+
+@media screen and (max-width: 1500px) {
+  .corps_site {
+    width: 80%; } }
+@media screen and (max-width: 1300px) {
+  .corps_site {
+    width: 90%; } }
+header {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: #fff9e4; }
+  header h2 {
+    width: 100%;
+    text-align: center;
+    font-family: 'Lovers Quarrel', cursive;
+    font-size: 7em;
+    font-weight: 400;
+    color: #397962;
+    margin-top: 70px;
+    margin-bottom: 0; }
+  header .sous-titre {
+    width: 100%;
+    text-align: center;
+    position: relative;
+    top: -20px; }
+    header .sous-titre p {
+      margin-top: 0;
+      margin-bottom: 70px;
+      font-size: 1.2em;
+      color: #a86239; }
+  header a {
+    font-size: 1.2em;
+    padding: 30px;
+    padding-bottom: 10px;
+    color: #352618; }
+  header a:hover {
+    border-bottom: #6b4a299f 2px solid;
+    color: #68411f; }
+  header .border {
+    width: 100%;
+    background: rgba(59, 49, 39, 0.164);
+    height: 1px;
+    margin-top: 12px; }
+  header .active {
+    color: #68411f;
+    border-bottom: #6b4a299f 2px solid; }
+
+.top {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+  position: relative; }
+  .top h1 {
+    text-align: center;
+    color: white;
+    z-index: 1;
+    font-weight: 400;
+    font-size: 2.5em; }
+  .top img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 10% 10%; }
+
+main {
+  overflow: hidden; }
+
+.corps_site {
+  width: 70%;
+  margin: auto; }
+
+.index_bloc {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 50px; }
+  .index_bloc h3, .index_bloc p {
+    transition: all 0.3s;
+    color: #352618; }
+
+.index_bloc1__image {
+  width: 300px;
+  position: relative;
+  margin-right: 10px; }
+  .index_bloc1__image img {
+    width: 100%; }
+.index_bloc1 p {
+  width: 60%; }
+
+.index_bloc2 {
+  transition: all 0.5s; }
+  .index_bloc2__txt {
+    width: 50%;
+    text-align: center;
+    margin-right: 10px;
+    margin-left: 10px;
+    transition: all 0.5s; }
+    .index_bloc2__txt h3 {
+      font-size: 3em; }
+  .index_bloc2__image {
+    width: 450px;
+    position: relative; }
+    .index_bloc2__image img {
+      width: 100%;
+      transition: all 0.5s; }
+
+.bloc_separation__elem {
+  display: none; }
+
+.index_bloc2:hover .index_bloc2__txt {
+  transform: scale(1.03); }
+.index_bloc2:hover .index_bloc2__image img {
+  transform: scale(1.03); }
+.index_bloc2:hover h3 {
+  color: #397962; }
+
+@media screen and (max-width: 1050px) {
+  .index_bloc2__txt {
+    order: 1;
+    width: 80%; }
+    .index_bloc2__txt h3 {
+      margin-bottom: 10px; }
+
+  .index_bloc2__image {
+    order: 2; }
+
+  .bloc_separation__elem {
+    display: flex; } }
+.bg {
+  position: absolute;
+  top: -80px;
+  left: -80px;
+  z-index: -1;
+  width: 150%;
+  height: 120%;
+  background: #ffe8cc59;
+  transform: rotate(0.1turn); }
+
+.bloc_separation {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 90px; }
+  .bloc_separation__elem {
+    width: 7px;
+    height: 100px;
+    background: #6b4a299f; }
+
+.displayNone {
+  display: none; }
+
+/*# sourceMappingURL=style.css.map */

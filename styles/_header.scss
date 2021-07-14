@@ -1,0 +1,59 @@
+header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: $clr1-a;
+
+    h2 {
+        width: 100%;
+        text-align: center;
+        font-family: 'Lovers Quarrel', cursive;
+        //font-family: 'Festive', cursive;
+        font-size: 7em;
+        font-weight: 400;
+        color: $clr2-a;
+
+        margin-top: 70px;
+        margin-bottom: 0;
+    }
+
+    .sous-titre {
+        width: 100%;
+        text-align: center;
+        position: relative;
+        top: -20px;
+
+        p {
+            margin-top: 0;
+            margin-bottom: 70px;
+            font-size: 1.2em;
+            color: rgb(168, 98, 57);
+        }
+    }
+
+    a {
+        font-size: 1.2em;
+        padding: 30px;
+        padding-bottom: 10px;
+        color: $clr3-a;
+
+
+    }
+
+    a:hover {
+      border-bottom: $clr3-b 2px solid;
+      color: $clr3-c;
+    }
+
+    .border {
+        width: 100%;
+        background: rgba(59, 49, 39, 0.164);
+        height: 1px;
+        margin-top : 12px;
+    }
+
+    .active {
+        color: $clr3-c;
+        border-bottom: $clr3-b 2px solid;
+    }
+}

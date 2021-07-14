@@ -1,0 +1,86 @@
+
+// p : font-family: 'Gotu', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Gotu&display=swap');
+
+// h : font-family: 'Festive', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Festive&display=swap');
+
+// h : font-family: 'Lovers Quarrel', cursive; (top)
+@import url('https://fonts.googleapis.com/css2?family=Lovers+Quarrel&display=swap');
+
+// h : font-family: 'Fuggles', cursive;
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&display=swap');
+
+
+$clr1-a : #fff9e4;
+$clr1-b : #ffe8cc59;
+
+$clr2-a : rgb(57, 121, 98);
+
+$clr3-a : #352618;
+$clr3-b : #6b4a299f;
+$clr3-c : #68411f;
+
+
+body, html {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Gotu', sans-serif;
+}
+
+body {
+    background: $clr1-a;
+    font-size: 1.25em;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+main {
+    width: 100%;
+    margin: auto;
+    position: relative;
+}
+
+
+
+footer {
+    display: flex;
+    justify-content: space-around;
+
+    align-items: center;
+
+    margin-top: 90px;
+
+    $clr2-b : rgb(101, 136, 131);
+    $clr3-d : rgb(134, 114, 98);
+    background: $clr3-d;
+    color: $clr1-a;
+
+    p {
+        text-align: center;
+    }
+
+    h2 {
+        margin-bottom: 0;
+        display: none;
+    }
+}
+
+
+
+
+@media screen and (max-width: 1500px) {
+    .corps_site {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .corps_site {
+        width: 90%;
+    }
+}
