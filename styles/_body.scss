@@ -16,10 +16,12 @@ $clr1-a : #fff9e4;
 $clr1-b : #ffe8cc59;
 
 $clr2-a : rgb(57, 121, 98);
+$clr2-b : rgb(101, 136, 131);
 
 $clr3-a : #352618;
 $clr3-b : #6b4a299f;
-$clr3-c : #68411f;
+$clr3-c : rgb(168, 98, 57);
+$clr3-d : rgb(134, 114, 98);
 
 
 body, html {
@@ -55,8 +57,7 @@ footer {
 
     margin-top: 90px;
 
-    $clr2-b : rgb(101, 136, 131);
-    $clr3-d : rgb(134, 114, 98);
+
     background: $clr3-d;
     color: $clr1-a;
 
@@ -70,17 +71,3 @@ footer {
     }
 }
 
-
-
-
-@media screen and (max-width: 1500px) {
-    .corps_site {
-        width: 80%;
-    }
-}
-
-@media screen and (max-width: 1300px) {
-    .corps_site {
-        width: 90%;
-    }
-}

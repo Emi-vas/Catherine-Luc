@@ -1,4 +1,4 @@
-@import "./_body";
+@import "./body";
 @import "./_header";
 
 .top {
@@ -21,9 +21,9 @@
         font-weight: 400;
         font-size: 2.5em;
 
-        //border-bottom: 1px solid white;
-       // border-top: 1px solid white;;
-       // padding: 30px;
+        border-bottom: 1px solid white;
+        border-top: 1px solid white;;
+        padding: 30px;
     }
 
     img {
@@ -174,9 +174,76 @@ main {
 
 
 
-
-
-
 .displayNone {
     display: none;
+}
+
+
+
+
+@media screen and (max-width: 1500px) {
+    .corps_site {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .corps_site {
+        width: 90%;
+    }
+}
+
+
+
+
+
+
+
+
+
+.galerie_bloc1 {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-top: 50px;
+
+    &__imageBig {
+        height: 700px;
+        //margin: 0 20px;
+    
+        img {
+            height: 100%;
+            max-width: 100%;
+            object-fit: contain;
+            box-shadow: 3px 5px 7px rgb(83, 83, 83);
+        }
+    }
+}
+
+.fleches {
+    display: flex;
+    justify-content: center;
+
+    margin: 20px;
+
+    i {
+        font-size: 1.7em;
+        color: $clr3-d;
+        padding-right: 20px;
+        padding-left: 20px;
+
+        transition: all 0.1s;
+    }
+
+    i:hover {
+        color: $clr2-a;
+        cursor: pointer;
+        transform: scale(1.03)
+    }
+}
+
+.bloc_txt {
+    p {
+        text-align: center;
+    }
 }
