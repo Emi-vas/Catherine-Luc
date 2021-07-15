@@ -4,6 +4,8 @@ window.onload = function() {
 
 function main() {
 
+    headerTel()
+
     const plus = document.getElementById("plus")
     const moins = document.getElementById("moins")
 
@@ -41,19 +43,23 @@ function main() {
     let i = 0
 
     function printImageBig() {
-        document.getElementById("imageBig").innerHTML = `<img src="${tableaux[i].lien}" alt="tableau de catherine luc">`
+        document.getElementById("imageBig").innerHTML = `<img src="${tableaux[i].lien}" alt="tableau de catherine luc" >`
         document.getElementById("imageTxt").innerHTML = ` 
         <p>
         30cm / 60cm <br>
         ${tableaux[i].prix} <br>
         lorem foryum
         </p>`
+
+        
     }
 
     printImageBig()
 
     plus.addEventListener("click", function() {
         i++
+
+
         if (i < tableaux.length) {
             printImageBig()
         } else {
@@ -72,8 +78,17 @@ function main() {
             printImageBig()
         }
     })
-    
-
 }
 
 
+function headerTel() {
+    const icone = document.getElementById("iconeTel")
+    const navTel = document.getElementById("navTel")
+    const top = document.getElementById("top")
+
+    icone.addEventListener("click", function() {
+        icone.classList.toggle("rotate")
+        navTel.classList.toggle("displayNone")
+        top.classList.toggle("h1Del")
+    })
+}

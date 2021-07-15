@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="./styles/style.css">
     <script src="./JS/app.js"></script>
+    <script src="https://kit.fontawesome.com/9e8c9aa232.js" crossorigin="anonymous"></script>
 
     <title>Catherine Luc - Artiste Peintre</title>
 </head>
@@ -18,7 +19,11 @@
             <p>Peintre - Art thérapeute</p>
         </div>
 
-        <nav class="menu">
+        <div>
+            <i class="fas fa-bars" id="iconeTel"></i>
+        </div>
+
+        <nav >
             <div class="nav_menu active" >
                 <a href="./index.html" >Accueil</a>
                 <div class="under"></div>
@@ -28,16 +33,27 @@
                 <div class="under"></div>
             </div>
             <div class="nav_menu">
-                <a href="#">Art Thérapie</a>
+                <a href="./art-therapie.html">Art Thérapie</a>
                 <div class="under"></div>
-            </div>
-            
+            </div>          
         </nav>
+
+        <div class="nav_tel displayNone" id="navTel">
+            <div class="nav_tel__1 active2" >
+                <a href="./index.html" >Accueil</a>
+            </div>
+            <div class="nav_tel__2">
+                <a href="./galerie.html" >Galerie</a>
+            </div>
+            <div class="nav_tel__3">
+                <a href="./art-therapie.html">Art Thérapie</a>
+            </div>  
+        </div>
 
         <div class="border"></div>
     </header>
 
-    <div class="top"> 
+    <div class="top" id="top">  
         <h1>Bienvenue</h1>
 
         <img src="./images/top.jpg" alt="tableau de Catherine Luc">

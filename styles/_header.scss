@@ -15,6 +15,8 @@ header {
 
         margin-top: 70px;
         margin-bottom: 0;
+
+        animation: titre 1.3s both;
     }
 
     .sous-titre {
@@ -22,6 +24,9 @@ header {
         text-align: center;
         position: relative;
         top: -30px;
+
+        opacity: 0;
+        animation: sousTitre 2s 0.7s both;
 
         p {
             margin-top: 0;
@@ -78,5 +83,130 @@ header {
         background: rgba(59, 49, 39, 0.164);
         height: 1px;
         margin-top : 12px;
+    }
+
+    #iconeTel {
+        display: none;
+    }
+}
+
+@keyframes titre {
+    from {
+        opacity: 0;
+        transform: scaleY(0);
+    }
+
+    to {
+        transform: scaleY(1);
+        opacity: 1;
+    }
+}
+
+@keyframes sousTitre {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+@media screen and (max-device-width: 720px) {
+
+    header {
+
+        position: relative;    
+        a {
+            padding: 10px;
+        }
+
+        h2 {
+            font-size: 3.6em;
+            margin-top: 10px;
+            
+        }
+
+        .sous-titre {
+            p {
+                font-size: 1em;
+                margin-bottom: 30px;
+            }
+        }
+
+        nav {
+            display: none;
+            position: absolute;
+
+            .under {
+                display: none;
+            }
+        }
+
+        #iconeTel {
+            display: inline;
+            
+        }
+
+        .rotate {
+            transform: rotate(0.25turn)
+        }
+
+        .border {
+            display: none;
+        }
+
+        i {
+            font-size: 1.7em;
+            color: $clr3-a;
+
+            position: absolute;
+            left: 25px;
+            bottom: 0;
+        }
+
+    }
+
+    .nav_tel {
+        z-index: 2;
+        position: absolute;
+        bottom: -300px;
+        left: 10px;
+
+        transform-origin: top;
+        animation: menuTel 1s both;
+
+        a {
+            color: white;
+            font-size: 2em;
+            border-left: white 7px solid;
+        }
+
+        .active2 {
+            a {
+                border-color: $clr3-e;
+                color: $clr3-e;
+            }
+        }
+    }
+
+    @keyframes menuTel {
+        from {
+            transform: scaleY(0) translateY(-300px);
+            opacity: 0;
+
+        }
+
+        to {
+            transform: scaleY(1) translateY(0px);
+            opacity: 1;
+        }
+    }
+
+    .h1Del {
+        h1 {
+            display: none;
+        }
     }
 }
